@@ -7,6 +7,7 @@ from wn.similarity import wup
 
 hyde = wn.Wordnet("hyde")
 
+# Example keywords
 cc_keywords_tokenized = [ 'Planet-Schule','Sonnenenergie', 'Solarenergie', 'Solarzelle', 'Solarthermie', 'Solarthermisches Kraftwerk' ]
 gc_keywords_tokenized = [ 'Solarenergie', 'Solarkollektoren', 'Solarzellen', 'Solarthermie-Kraftwerke' ]
 
