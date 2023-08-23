@@ -8,6 +8,8 @@ from wn.similarity import path
 hyde = wn.Wordnet("hyde")
 #Sonnenenergie = odenet.synsets('Sonnenenergie')[0]
 #path(Sonnenenergie, odenet.synsets('Solarenergie')[0])
+
+# Example keywords
 cc_keywords_tokenized = [ 'Planet-Schule','Sonnenenergie', 'Solarenergie', 'Solarzelle', 'Solarthermie', 'Solarthermisches Kraftwerk' ]
 gc_keywords_tokenized = [ 'Solarenergie', 'Solarkollektoren', 'Solarzellen', 'Solarthermie-Kraftwerke' ]
 paths=[]
