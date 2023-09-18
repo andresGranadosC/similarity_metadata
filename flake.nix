@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    # nix-filter.url = "github:numtide/nix-filter";
+    nix-filter.url = "github:numtide/nix-filter";
   };
 
   outputs = { self, nixpkgs, flake-utils, ... }:
