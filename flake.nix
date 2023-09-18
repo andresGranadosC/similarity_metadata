@@ -65,7 +65,8 @@
         };
 
       in {
-        default = import ./shell.nix { inherit pkgs; };
+        # default = import ./shell.nix { inherit pkgs; };
+        packages.default = similarity;
         devShells.default = pkgs.mkShell {
           buildInputs = [
             (python.withPackages python-packages-devel)
