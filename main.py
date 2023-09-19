@@ -50,7 +50,8 @@ async def soft_scores(data: Data) -> Soft_scores_result:
     return Soft_scores_result(precision=str(s_precision), recall=str(s_recall), fscore=str(s_f_score) )
 
 
-def main( ground_truth, generic_crawler ):
+# def main( ground_truth, generic_crawler ):
+def main():
     
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -72,7 +73,7 @@ def main( ground_truth, generic_crawler ):
 
 
 if __name__ == "__main__":
-    gt = json.loads( sys.argv[1] )
-    gc = json.loads( sys.argv[2] )
-    main( gt, gc )
-
+    # gt = json.loads( sys.argv[1] )
+    # gc = json.loads( sys.argv[2] )
+    # main( gt, gc )
+    main()
