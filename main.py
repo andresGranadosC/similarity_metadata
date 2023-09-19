@@ -23,10 +23,13 @@ class Soft_scores_result(BaseModel):
     recall: str
     fscore: str
 
+@app.get("/_ping")
+async def _ping():
+    pass
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+# @app.get("/")
+# async def root():
+#     return {"message": "Hello World"}
 
 
 @app.post("/gen_recall")
