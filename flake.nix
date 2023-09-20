@@ -49,7 +49,7 @@
 
         ### declare how the python package shall be built
         similarity = with python.pkgs; buildPythonPackage rec {
-          pname = "similarity";
+          pname = "similarity_score";
           version = "0.1.2";
           # only include the package-related files
           src = nix-filter {
@@ -63,10 +63,15 @@
           };
           propagatedBuildInputs = (python-packages-build python.pkgs);
         };
+        
+        similarity-service = python.pkgs.toPythonApplication similarity;
 
       in {
         # default = import ./shell.nix { inherit pkgs; };
-        packages.default = similarity;
+        # packages.default = similarity;
+        packages = {
+          default = similarity-service;
+        };
         devShells.default = pkgs.mkShell {
           buildInputs = [
             (python.withPackages python-packages-devel)
@@ -75,5 +80,6 @@
           ];
         };
 
+        
       }
     );}
