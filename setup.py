@@ -12,7 +12,7 @@ setup(
     package_dir={"": "."},
     entry_points={
         "console_scripts": [
-            "similarity = similarity_score.webservice:main",
+            "similarity_score = similarity_score.webservice:main",
         ]
     },
 )
